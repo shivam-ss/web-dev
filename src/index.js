@@ -1,18 +1,18 @@
-//Create a react app from scratch.
-//It should display a h1 heading.
-//It should display an unordered list (bullet points).
-//It should contain 3 list elements.
-
 import React from "react";
 import ReactDOM from "react-dom";
 
+const name = "Shivam";
+
+const currdate = new Date();
+const year = currdate.getFullYear();
+
+const imag = "https://picsum.photos/200";
+
 ReactDOM.render(
   <div>
-    <ul>
-      <li> TEA </li>
-      <li> Coffee </li>
-      <li> Water </li>
-    </ul>
+    <p>Created by {name} </p>
+    <p>Copyright {year} </p>
+    <img src={imag} />
   </div>,
   document.getElementById("root")
 );
